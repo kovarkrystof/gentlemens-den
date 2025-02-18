@@ -104,7 +104,7 @@ section {
     align-items: center;
     justify-content: flex-start; /* Zarovnání obsahu vlevo */
     height: 89dvh; /* Výška přes celou obrazovku */
-    background: linear-gradient(to right, rgba(230, 194, 122, 0.995) 10%, rgba(0, 0, 255, 0)), url('home-photo.jpg');
+    background: linear-gradient(to right, rgba(230, 194, 122, 0.995) 10%, rgba(0, 0, 255, 0)), url('../images/home-photo.jpg');
     background-size: cover;
     background-position: center;
     padding-left: 5%;
