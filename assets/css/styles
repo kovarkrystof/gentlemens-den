@@ -1,0 +1,140 @@
+/* Reset a základní styly */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000000;
+    color: #fff;
+}
+
+/* Navigace */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #000000e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    height: 7dvh;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #c9a856;
+}
+
+/* CTA tlačítko */
+.cta-button {
+    background: #c9a856;
+    color: #1b1b1b;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background: rgb(230, 194, 122);
+}
+
+/* Full-screen sekce */
+section {
+    height: 100dvh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px;
+}
+
+#hero {
+    display: block; /* nebo inline/inline-block podle prvku */
+    align-items: center; /* Pouze pro flex kontejnery */
+    justify-content: flex-start; /* Pouze pro flex kontejnery */
+    text-align: start; /* Podle směru textu (left pro LTR, right pro RTL) */
+    padding: 0%;
+
+    background-color: #000000;
+}
+
+#home {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Zarovnání obsahu vlevo */
+    height: 89dvh; /* Výška přes celou obrazovku */
+    background: linear-gradient(to right, rgba(230, 194, 122, 0.995) 10%, rgba(0, 0, 255, 0)), url('home-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    padding-left: 5%;
+    margin: 8dvh 3dvh 3dvh 3dvh;
+    color: white;
+    border-radius: 15px;
+}
+
+#home .cta-button {
+    margin-left: 0;
+}
+
+#home h2 {
+    font-size: 3em;
+}
+
+/* Styl pro obsah uvnitř home sekce */
+.home-content {
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 20px;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
