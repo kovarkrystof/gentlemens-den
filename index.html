@@ -4,32 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gentlemen's Den – Barbershop, kde vzniká tvůj styl</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-    
-    <!-- Navigace -->
     <header>
         <div class="logo">Gentlemen's Den</div>
-        <nav>
+        <div class="burger-menu" id="burger-menu">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </div>
+        <nav id="nav-menu">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#about">O nás</a></li>
+                <li><a href="#about">O&nbsp;nás</a></li>
                 <li><a href="#services">Služby</a></li>
                 <li><a href="#gallery">Galerie</a></li>
                 <li><a href="#reviews">Recenze</a></li>
                 <li><a href="#contact">Kontakt</a></li>
             </ul>
-            <a href="#contact" class="cta-button">Objednat se teď</a>
+            <a href="#contact" class="cta-button">Objednat&nbsp;se&nbsp;teď</a>
         </nav>
     </header>
 
     <!-- Home page -->
     <section id="home">
         <div class="home-content">
-            <h2>Vítejte v Gentlemen's Den – kde každý střih znamená sebevědomí.</h2>
+            <!-- <h2>Vítejte v Gentlemen's Den – kde každý střih znamená sebevědomí.</h2> -->
+            <h2>Uděláme Vám střih pro který se budete vracet znovu a znovu.</h2>
             <p>Moderní barbershop pro muže, kteří chtějí vypadat skvěle a cítit se ještě lépe.</p>
-            <a href="#contact" class="cta-button">Objednat se teď</a>
+            <div class="home-buttons"><a href="#contact" class="cta-button">Objednat&nbsp;se&nbsp;teď</a><a href="#gallery" class="cta-button">Naše&nbsp;práce</a></div>
         </div>
     </section>
 
@@ -73,6 +78,6 @@
     <footer>
         <p>&copy; 2025 Gentlemen's Den. Všechna práva vyhrazena.</p>
     </footer>
-    
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
