@@ -1,0 +1,73 @@
+/* reset.css */
+
+/* Reset všech okrajů a výplní pro všechny elementy */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Nastavení základního písma pro tělo */
+body {
+  font-family: sans-serif, Arial, Helvetica;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Reset pro nadpisy */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal;
+  margin: 0;
+}
+
+/* Reset pro seznamy */
+ul, ol {
+  list-style: none;
+}
+
+/* Odkazy bez podtržení, ale s dědičnou barvou */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Tlačítka bez rámečku a podkladové barvy */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Základní reset pro formuláře */
+input, textarea, select, button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  border: none;
+  outline: none;
+}
+
+/* Obrazky se nastaví na maximální šířku, aby nevyčnívaly */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Obecné nastavení pro tabulky */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Základní styl pro blokové prvky, jako jsou divy */
+div, section, article, aside, footer, header {
+  display: block;
+}
