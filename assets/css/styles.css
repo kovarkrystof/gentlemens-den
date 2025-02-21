@@ -57,6 +57,7 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #c9a856;
+    transition: 0.5s;
 }
 
 /** BURGER MENU  **/
@@ -79,7 +80,7 @@ nav ul li a:hover {
 
 /* Animace křížku */
 .burger-menu.active .bar:nth-child(1) {
-    transform: translateY(8.5px) rotate(48deg); /* Horní čára - rotace na 45° */
+    transform: translateY(8.5px) rotate(48deg);
 }
 
 .burger-menu.active .bar:nth-child(2) {
@@ -87,7 +88,7 @@ nav ul li a:hover {
 }
 
 .burger-menu.active .bar:nth-child(3) {
-    transform: translateY(-8.5px) rotate(-43deg); /* Dolní čára - rotace na -45° */
+    transform: translateY(-8.5px) rotate(-43deg);
 }
 
 
@@ -108,7 +109,7 @@ nav ul li a:hover {
 }
 
 section {
-    height: 100dvh;
+    min-height: 100dvh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -116,15 +117,6 @@ section {
     padding: 50px;
 }
 
-#hero {
-    display: block;
-    align-items: center;
-    justify-content: flex-start;
-    text-align: start;
-    padding: 0%;
-
-    background-color: #000000;
-}
 
 #home {
     display: flex;
@@ -146,7 +138,7 @@ section {
 }
 
 #home p {
-    font-size: 1em;
+    font-size: 1.1em;
     margin-bottom: 10px;
 }
 
@@ -164,11 +156,70 @@ section {
     gap: 20px;
 }
 
+
+
+
+
+
+
+
+#services {
+    text-align: center;
+    padding: 50px;
+    display: block;
+}
+
+#services h2 {
+    margin-top: 30px;
+}
+
+.service-list {
+    max-width: 800px;
+    margin: auto;
+}
+
+.service {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #c9a856;
+    padding: 15px 0;
+}
+
+.service-info {
+    text-align: left;
+}
+
+.service h3 {
+    margin: 0;
+    font-size: 20px;
+}
+
+.service p {
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.price {
+    font-weight: bold;
+    color: #c9a856;
+}
+
+
+
+
+
+
+
+
 /* Footer */
 footer {
+    background: #000;
+    border-top: 1px solid #c9a856;
     text-align: center;
     padding: 20px;
-    background: #000;
+    margin: 0 auto;
+    width: 95%;
 }
 
 
@@ -182,7 +233,7 @@ footer {
 
     nav {
         position: absolute;
-        top: 60px;
+        top: 55px;
         right: 0;
         width: 100%;
         background: rgba(0, 0, 0, 0.9);

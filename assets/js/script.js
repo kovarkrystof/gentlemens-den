@@ -3,26 +3,26 @@ document.addEventListener("DOMContentLoaded", () => {
     const navMenu = document.getElementById("nav-menu");
     const navLinks = document.querySelectorAll("#nav-menu a");
 
-    // Otevření / zavření menu při kliknutí na burger
+    // Přepnutí stavu menu při kliknutí na burger ikonu
     burgerMenu.addEventListener("click", (event) => {
-        event.stopPropagation(); // Zabrání zavření při kliknutí na ikonu
-        navMenu.classList.toggle("open");
-        burgerMenu.classList.toggle("active"); // Přidání animace burger menu
+        event.stopPropagation(); // Zabrání zavření menu okamžitě po kliknutí na burger ikonu
+        navMenu.classList.toggle("open"); // Otevře nebo zavře navigační menu
+        burgerMenu.classList.toggle("active"); // Přepne animaci burger menu
     });
 
     // Zavření menu při kliknutí mimo něj
     document.addEventListener("click", (event) => {
         if (!navMenu.contains(event.target) && !burgerMenu.contains(event.target)) {
-            navMenu.classList.remove("open");
-            burgerMenu.classList.remove("active"); // Zruší animaci burger menu
+            navMenu.classList.remove("open"); // Skryje navigační menu
+            burgerMenu.classList.remove("active"); // Deaktivuje animaci burger menu
         }
     });
 
+    // Zavření menu při kliknutí na jakýkoliv odkaz v navigaci
     for (const link of navLinks) {
         link.addEventListener("click", () => {
-            navMenu.classList.remove("open");
-            burgerMenu.classList.remove("active"); // Zruší animaci burger menu
+            navMenu.classList.remove("open"); // Skryje navigační menu
+            burgerMenu.classList.remove("active"); // Deaktivuje animaci burger menu
         });
     }
-    
 });
