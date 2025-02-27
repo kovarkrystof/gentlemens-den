@@ -5,8 +5,8 @@ html {
 body {
     font-family: "Oswald", sans-serif;
     font-style: normal;
-    background-color: #000000;
-    color: #fff;
+    background-color: #161616;
+    color: #FFFFF3;
 }
 
 header {
@@ -14,7 +14,7 @@ header {
     top: 0;
     left: 0;
     width: 100%;
-    background: #000000e6;
+    background: #161616e6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -24,10 +24,13 @@ header {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
-    letter-spacing: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.logo img {
+    height: 10vh;
 }
 
 /** NAV BAR **/
@@ -48,7 +51,7 @@ nav ul li {
 
 nav ul li a {
     text-decoration: none;
-    color: #fff;
+    color: #FFFFF3;
     font-size: 18px;
     transition: 0.3s;
 }
@@ -71,7 +74,7 @@ nav ul li a:hover {
 .burger-menu .bar {
     width: 30px;
     height: 4px;
-    background-color: white;
+    background-color: #FFFFF3;
     border-radius: 5px;
     transition: transform 0.3s ease, opacity 0.3s ease;
 }
@@ -93,17 +96,21 @@ nav ul li a:hover {
 /* CTA tlačítko */
 .cta-button {
     background: #c9a856;
-    color: #1b1b1b;
+    color: #161616;
     padding: 10px 20px;
     border-radius: 18px;
+    border: solid 2px#c9a856;
     text-decoration: none;
     font-weight: bold;
     margin-left: 20px;
-    transition: 0.3s;
+    display: inline-block;
+    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
 }
 
 .cta-button:hover {
     background: rgb(230, 194, 122);
+    transform: scale(1.05);
+    border: solid 2px#c9a856;
 }
 
 section {
@@ -112,8 +119,20 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 50px;
+    padding-top: 8dvh;
 }
+
+h2 {
+    font-size: 2em;
+    color: #c9a856;
+    text-align: center;
+    font-weight: 600;
+    margin: 40px 0 10px 0;
+    padding-bottom: 10px;
+    display: inline-block;
+}
+
+
 
 
 #home {
@@ -126,11 +145,11 @@ section {
     background-position: center;
     padding-left: 5%;
     margin: 8dvh 3dvh 3dvh 3dvh;
-    color: white;
+    color: #FFFFF3;
     border-radius: 18px;
 }
 
-#home h2 {
+#home h1 {
     font-size: 3.5em;
     font-weight: 500;
 }
@@ -158,17 +177,118 @@ section {
 
 
 
+#about {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#about-text {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 25px;
+}
+
+#about-main-heading {
+    margin: 30px 0 10px 0;
+}
+
+#about-text p {
+    text-align: justify;
+}
+
+.team-container {
+    text-align: center;
+}
+
+.team-container h2 {
+    margin: 30px 0 10px 0;
+}
+
+.employee-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.employee {
+    width: 300px;
+    height: 450px;
+    position: relative;
+    background: #222222;
+    border-radius: 18px;
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+.employee:hover {
+    transform: scale(1.05);
+}
+
+/* Nový styl pro wrapper obrázku */
+.employee-image {
+    position: relative;
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 18px 18px 0 0;
+}
+
+.employee-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Gradient zůstává stejný, ale teď je na .employee-image */
+.employee-image::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 255, 0)70%, rgba(230, 194, 122, 0.725));
+    pointer-events: none;
+}
+
+.employee-info {
+    padding: 24px;
+    color: #fff;
+}
+
+.employee h3 {
+    font-size: 1.4em;
+    color: #c9a856;
+}
+
+.employee h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.employee p {
+    font-size: 1em;
+    color: #ccc;
+}
+
+
+
+
 
 
 
 #services {
     text-align: center;
-    padding: 50px;
+    padding: 8dvh 50px;
     display: block;
 }
 
 #services h2 {
     margin-top: 30px;
+    font-size: 2em;
 }
 
 .service-list {
@@ -190,7 +310,7 @@ section {
 
 .service h3 {
     margin: 0;
-    font-size: 20px;
+    font-size: 1.2em;
 }
 
 .service p {
@@ -206,14 +326,10 @@ section {
 
 
 
-
-
-
-
 /* Footer */
 footer {
-    background: #000;
-    border-top: 1px solid #c9a856;
+    background: #161616;
+    border-top: 2px solid #c9a856;
     text-align: center;
     padding: 20px;
     margin: 0 auto;
@@ -234,7 +350,7 @@ footer {
         top: 8dvh;
         right: 0;
         width: 100%;
-        background: rgba(0, 0, 0, 0.9);
+        background: #161616e6;
         display: none;
         flex-direction: column;
         align-items: center;
@@ -275,5 +391,11 @@ footer {
 
     .cta-button {
         margin-top: 20px;
+    }
+
+    /* ABOUT */
+    .employee-container {
+        flex-direction: column;
+        align-items: center;
     }
 }
