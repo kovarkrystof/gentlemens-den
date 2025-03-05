@@ -88,8 +88,8 @@
 
 
 
-    <!-- Služby -->
-    <section id="services">
+       <!-- Služby -->
+       <section id="services">
         <h2>Cenník služeb</h2>
         <div class="service-list">
             <div class="service">
@@ -113,27 +113,27 @@
                 </div>
                 <span class="price">300&nbsp;Kč</span>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <div class="service-info">
                     <h3>Kompletní balíček</h3>
                     <p>Střih vlasů a úprava vousů v jednom balíčku za zvýhodněnou cenu.</p>
                 </div>
                 <span class="price">650&nbsp;Kč</span>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <div class="service-info">
                     <h3>Barvení vlasů</h3>
                     <p>Profesionální barvení, které oživí Vaše vlasy a dodá jim lesk.</p>
                 </div>
                 <span class="price">600&nbsp;Kč</span>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <div class="service-info">
                     <h3>Dětský střih</h3>
                     <p>Profesionální střih pro děti do 12&nbsp;let, šetrný a rychlý.</p>
                 </div>
                 <span class="price">300&nbsp;Kč</span>
-            </div>            
+            </div>
         </div>
     
         <h2>Doplňkové služby</h2>
@@ -152,14 +152,14 @@
                 </div>
                 <span class="price">100&nbsp;Kč</span>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <div class="service-info">
                     <h3>Úprava obočí</h3>
                     <p>Formování a úprava obočí pro dokonalý vzhled.</p>
                 </div>
                 <span class="price">150&nbsp;Kč</span>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <div class="service-info">
                     <h3>Úprava uší</h3>
                     <p>Trimování chloupků na uších pro čistý vzhled.</p>
@@ -177,28 +177,49 @@
                 </div>
                 <span class="price">550&nbsp;Kč</span>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <div class="service-info">
                     <h3>Keratinová úprava vlasů</h3>
                     <p>Regenerační ošetření pro zdravější a hladší vlasy s dlouhotrvajícím efektem.</p>
                 </div>
                 <span class="price">800&nbsp;Kč</span>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <div class="service-info">
                     <h3>Dárkové karty</h3>
                     <p>Chcete obdarovat své blízké skvělým zážitkem? U nás můžete zakoupit dárkové karty na libovolnou částku, které lze využít na všechny naše služby. Karty si můžete vyjednat přímo u obsluhy a zaručujeme, že obdarovaný bude nadšený!</p>
                 </div>
             </div>
         </div>
-    </section>
+        
+        <button class="expand-services">Zobrazit celý ceník</button>
+
+    </section>    
     
-    <!-- Galerie -->
-    <section id="gallery">
-        <h2>Galerie</h2>
-        <p>Podívej se na naši práci a inspiruj se stylem, který ti sedne.</p>
-        <a href="#contact" class="cta-button">Chci taky vypadat skvěle!</a>
-    </section>
+<!-- Galerie -->
+<section id="gallery">
+    <h2>Galerie</h2>
+    <h3>Podívej se na naši práci a inspiruj se stylem, který ti sedne.</h3>
+    <div class="gallery-container">
+        <img src="assets/images/haircut1.jpg" alt="Galerie 1" class="gallery-item">
+        <img src="assets/images/haircut2.jpg" alt="Galerie 2" class="gallery-item">
+        <img src="assets/images/haircut3.jpg" alt="Galerie 3" class="gallery-item">
+        <img src="assets/images/haircut4.jpg" alt="Galerie 4" class="gallery-item">
+        <img src="assets/images/haircut5.jpg" alt="Galerie 5" class="gallery-item">
+        <img src="assets/images/haircut6.jpg" alt="Galerie 6" class="gallery-item">
+        <img src="assets/images/haircut7.jpg" alt="Galerie 7" class="gallery-item">
+        <img src="assets/images/haircut8.jpg" alt="Galerie 8" class="gallery-item">
+    </div>
+
+<!-- Lightbox -->
+<div id="lightbox" class="lightbox">
+    <span class="close">&times;</span>
+    <img class="lightbox-content" id="lightbox-img">
+    <button id="prev-img" class="lightbox-btn prev">&lt;</button>
+    <button id="next-img" class="lightbox-btn next">&gt;</button>
+</div>
+
+
 
     <!-- Recenze -->
     <section id="reviews">
@@ -259,5 +280,6 @@
 
     <script src="assets/js/script.js"></script>
 
+    <script src="assets/js/cenik.js"></script>
 </body>
 </html>
