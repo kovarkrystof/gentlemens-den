@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    // NAV - Burger menu a navigace
     const burgerMenu = document.getElementById("burger-menu");
     const navMenu = document.getElementById("nav-menu");
     const navLinks = document.querySelectorAll("#nav-menu a");
@@ -25,4 +26,32 @@ document.addEventListener("DOMContentLoaded", () => {
             burgerMenu.classList.remove("active"); // Deaktivuje animaci burger menu
         });
     }
+
+
+    
+    // GALLERY - Lightbox pro galerii
+    const galleryItems = document.querySelectorAll(".gallery-item");
+    const lightbox = document.getElementById("lightbox");
+    const lightboxImg = document.getElementById("lightbox-img");
+    const closeBtn = document.querySelector(".close");
+
+    // Otevření lightboxu při kliknutí na položku galerie
+    for (const item of galleryItems) {
+        item.addEventListener("click", function () {
+            lightbox.style.display = "flex"; // Zobrazí lightbox
+            lightboxImg.src = this.src; // Nastaví obrázek v lightboxu
+        });
+    }
+
+    // Zavření lightboxu při kliknutí na zavírací tlačítko
+    closeBtn.addEventListener("click", () => {
+        lightbox.style.display = "none"; // Skryje lightbox
+    });
+
+    // Zavření lightboxu při kliknutí mimo obrázek
+    lightbox.addEventListener("click", (event) => {
+        if (event.target !== lightboxImg) {
+            lightbox.style.display = "none"; // Skryje lightbox
+        }
+    });
 });
