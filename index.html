@@ -12,7 +12,7 @@
 </head>
 <body>
     <header>
-        <div class="logo"></div>
+        <div class="logo"><img src="assets/images/logo-remove-bg.png" alt=""></div>
         <div class="burger-menu" id="burger-menu">
             <div class="bar"></div>
             <div class="bar"></div>
@@ -45,7 +45,7 @@
         <!-- O nás -->
     <section id="about">
         <div id="about-text">
-            <h2 id="about-main-heading">O nás</h2>
+            <h2 id="about-main-heading">Proč zvolit právě nás?</h2>
             <p>V Gentlemen's Den se soustředíme na víc než jen na střihy – jde o zážitek. Kombinujeme tradiční barber techniky s moderními trendy, abychom vám nabídli nejen precizní střihy a luxusní oholení, ale i atmosféru, kde se můžete cítit jako opravdový gentleman. Přijďte si užít individuální přístup a chvíle odpočinku v našem příjemném prostředí.</p>
         </div>
 
@@ -198,8 +198,7 @@
     
     <!-- Galerie -->
     <section id="gallery">
-        <h2>Galerie</h2>
-        <h3>Podívej se na naši práci a inspiruj se stylem, který ti sedne.</h3>
+        <h2>Nechte se inspirovat, protože i takhle může vypadat Váš nový účes</h2>
         <div class="gallery-container">
             <img src="assets/images/haircut1.jpg" alt="Galerie 1" class="gallery-item">
             <img src="assets/images/haircut2.jpg" alt="Galerie 2" class="gallery-item">
@@ -220,16 +219,63 @@
         </div>
     </section>
 
-
-    <!-- Recenze -->
+    <!-- Reviews -->
     <section id="reviews">
         <h2>Co o nás řekli naši zákazníci?</h2>
+        <div class="carousel-container">
+            <div class="reviews-wrapper">
+                <div class="reviews-track">
+                    <div class="review">
+                        <img src="assets/images/profile-pic1.jpg" alt="Profilová fotka" class="review-img">
+                        <div class="review-content">
+                            <h3>Jan Novák</h3>
+                            <p>Skvělý střih a úžasná atmosféra! Určitě se vrátím.</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="assets/images/profile-pic2.jpg" alt="Profilová fotka" class="review-img">
+                        <div class="review-content">
+                            <h3>Petr Svoboda</h3>
+                            <p>Profesionální přístup a výborné služby. Doporučuji!</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="assets/images/profile-pic3.jpg" alt="Profilová fotka" class="review-img">
+                        <div class="review-content">
+                            <h3>Martin Dvořák</h3>
+                            <p>Nejlepší barber v okolí. Skvělá práce!</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="assets/images/profile-pic4.jpg" alt="Profilová fotka" class="review-img">
+                        <div class="review-content">
+                            <h3>Adam Vrána</h3>
+                            <p>Velká spokojenost. Skvělý personál a perfektní střih.</p>
+                        </div>
+                    </div>
+                    <div class="review">
+                        <img src="assets/images/profile-pic5.jpg" alt="Profilová fotka" class="review-img">
+                        <div class="review-content">
+                            <h3>Tomáš Král</h3>
+                            <p>Skvělý servis a přátelský personál. Určitě doporučuji!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button id="next-review" class="carousel-button">&#10095;</button>
+        </div>
     </section>
 
     <!-- Kontakt -->
     <section id="contact">
-        <h2>Kontakt</h2>
-        <p>Najdeš nás tady – a budeš se chtít vrátit.</p>
+        <h2>Sjednejte si schůzku, a nebo se k nám přijďte rovnou podívat</h2>
+        <div class="contact-block">
+
+        </div>
+        <div class="contact-block">
+
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.4153187577913!2d17.269749776736255!3d49.58991697144062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47124e87273bae7b%3A0x628e9cecc8a87298!2zVnnFocWhw60gb2Rib3Juw6EgxaFrb2xhIGEgU3TFmWVkbsOtIHByxa9teXNsb3bDoSDFoWtvbGEgZWxla3Ryb3RlY2huaWNrw6E!5e0!3m2!1scs!2scz!4v1741347149612!5m2!1scs!2scz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
     <footer>
@@ -239,17 +285,16 @@
                 <p>Barbershop, kde vzniká tvůj styl. Tradiční péče s moderním přístupem.</p>
             </div>
             <div class="footer-column nav">
-                <h3>Rychlá navigace</h3>
+                <h3>Užitečné</h3>
                 <ul>
                     <li><a href="#about">O&nbsp;nás</a></li>
-                    <li><a href="#services">Služby</a></li>
+                    <li><a href="#services">Cenník</a></li>
                     <li><a href="#gallery">Galerie</a></li>
                     <li><a href="#reviews">Recenze</a></li>
-                    <li><a href="#contact">Kontakt</a></li>
                 </ul>
             </div>
             <div class="footer-column">
-                <h3>Kontakt & Otevírací doba</h3>
+                <h3>Kontakt</h3>
                 <div class="footer-contact-info">
                     <img src="assets/icons/location-icon.svg" alt="location-iconß" class="contact-icon">
                     <p>Ulice 123, Olomouc</p>
@@ -262,9 +307,12 @@
                     <img src="assets/icons/mail-icon.svg" alt="mail-icon" class="contact-icon">
                     <p><a href="mailto:info@gentlemansden.cz">info@gentlemansden.cz</a></p>
                 </div>
-                <br>
+            </div>
+            <div class="footer-column">
+                <h3>Otevírací doba</h3>
                 <p>Po–Pá: 9:00–19:00</p>
-                <p>So: 10:00–16:00 | Ne: Zavřeno</p>
+                <p>So: 10:00–16:00</p>
+                <p>Ne: Zavřeno</p>
             </div>
             <div class="footer-column social">
                 <h3>Sledujte nás</h3>
@@ -275,11 +323,39 @@
                 </div>
             </div>
         </div>
-        <p class="copyright">&copy; 2025 Gentleman’s Den. Všechna práva vyhrazena.</p>
+            <p class="copyright">&copy; 2025 Gentleman’s Den. Všechna práva vyhrazena.</p>
     </footer>
 
     <script src="assets/js/script.js"></script>
 
     <script src="assets/js/cenik.js"></script>
+
+    <script>
+        const track = document.querySelector('.reviews-track');
+        const nextButton = document.querySelector('#next-review');
+        const reviews = document.querySelectorAll('.review');
+        const reviewWidth = reviews[0].clientWidth;
+        let index = 0;
+        
+        // Klonování prvků pro nekonečný efekt
+        reviews.forEach(review => {
+            let clone = review.cloneNode(true);
+            track.appendChild(clone);
+        });
+        
+        nextButton.addEventListener('click', () => {
+            index++;
+            track.style.transition = 'transform 0.5s ease-in-out';
+            track.style.transform = `translateX(${-index * reviewWidth}px)`;
+            
+            if (index >= reviews.length) {
+                setTimeout(() => {
+                    track.style.transition = 'none';
+                    track.style.transform = `translateX(0px)`;
+                    index = 0;
+                }, 500);
+            }
+        });
+        </script>
 </body>
 </html>
