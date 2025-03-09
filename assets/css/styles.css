@@ -114,7 +114,6 @@ nav ul li a:hover {
 }
 
 section {
-    min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -129,6 +128,7 @@ h2 {
     font-weight: 600;
     margin: 30px 0 10px 0;
     padding-bottom: 10px;
+    margin: 10px;
     display: inline-block;
 }
 
@@ -276,7 +276,7 @@ h2 {
 /* Price list */
 #services {
     text-align: center;
-    padding: 8dvh 50px;
+    padding: 8dvh 50px 0px 50px;
     display: block;
 }
 
@@ -315,6 +315,7 @@ h2 {
 .price {
     font-weight: bold;
     color: #c9a856;
+    padding: 0 0 0 7px;
 }
 
 .service.hidden {
@@ -350,8 +351,8 @@ h2 {
 /* Gallery */
 #gallery {
     text-align: center;
-    padding-top: 8dvh;
     display: block;
+    padding: 8dvh 10px 0px 10px;
 }
 
 .gallery-container {
@@ -410,6 +411,17 @@ h2 {
     cursor: pointer;
 }
 
+/* Contact */
+#contact {
+    display: block;
+    min-height: 0;
+}
+
+#contact iframe {
+    width: 100%;
+    height: 450px;
+    padding: 0 3dvh;
+}
 
 
 /* Footer */
@@ -479,10 +491,9 @@ footer {
 }
 
 .copyright {
-    padding: 20px;
+    padding: 20px 0;
     border-top: 2px solid #c9a856;
 }
-
 
 
 /* Responzivita pro střední obrazovky (max-width: 1024px) */
@@ -565,9 +576,83 @@ footer {
 
 /* Responzivita pro úzké displeje (max-width: 480px) */
 @media (max-width: 480px) {
+    /* Price list */
+    #services {
+    padding: 8dvh 10px 0px 10px;
+    }
+
     /* GALLERY */
     .gallery-container {
         max-width: 350px;
         gap: 10px; /* Menší mezera mezi položkami */
     }
+
+    /* FOOTER */
+    .footer-container {
+        padding: 10px;
+    }
+}
+
+
+
+
+/* Reviews */
+#reviews {
+    display: block;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 500px;
+    margin: auto;
+}
+
+.reviews-wrapper {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 18px;
+}
+
+.reviews-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review {
+    min-width: 100%;
+    background: #222222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.review-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review-content h3 {
+    color: #c9a856;
+    margin: 0;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    margin: 0 15px;
+    color: #c9a856;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
 }
