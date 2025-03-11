@@ -9,6 +9,55 @@ body {
     color: #FFFFF3;
 }
 
+/* Reusable */
+section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 8dvh;
+}
+
+h2 {
+    font-size: 2em;
+    color: #c9a856;
+    text-align: center;
+    font-weight: 600;
+    margin: 30px 0 10px 0;
+    margin: 10px;
+    display: inline-block;
+}
+
+.second-heading {
+    color: #FFFFF3;
+    padding-bottom: 20px;
+}
+
+
+
+/* CTA tlačítko */
+.cta-button {
+    background: #c9a856;
+    color: #161616;
+    padding: 10px 20px;
+    border-radius: 18px;
+    border: solid 2px#c9a856;
+    text-decoration: none;
+    font-weight: bold;
+    margin-left: 20px;
+    display: inline-block;
+    transition: transform 0.5s ease, background-color 0.5s ease, border-color 0.5s ease;
+}
+
+.cta-button:hover {
+    background: rgb(230, 194, 122);
+    transform: scale(1.05);
+    border: solid 2px#c9a856;
+}
+
+
+
+
 header {
     position: fixed;
     top: 0;
@@ -33,6 +82,8 @@ header {
     height: 10vh;
 }
 
+
+
 /** NAV BAR **/
 nav {
     display: flex;
@@ -53,13 +104,15 @@ nav ul li a {
     text-decoration: none;
     color: #FFFFF3;
     font-size: 18px;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 nav ul li a:hover {
     color: #c9a856;
     transition: 0.5s;
 }
+
+
 
 /** BURGER MENU  **/
 .burger-menu {
@@ -76,7 +129,7 @@ nav ul li a:hover {
     height: 4px;
     background-color: #FFFFF3;
     border-radius: 5px;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.5s ease, opacity 0.5s ease;
 }
 
 /* Animace křížku */
@@ -90,46 +143,6 @@ nav ul li a:hover {
 
 .burger-menu.active .bar:nth-child(3) {
     transform: translateY(-8.5px) rotate(-43deg);
-}
-
-
-/* CTA tlačítko */
-.cta-button {
-    background: #c9a856;
-    color: #161616;
-    padding: 10px 20px;
-    border-radius: 18px;
-    border: solid 2px#c9a856;
-    text-decoration: none;
-    font-weight: bold;
-    margin-left: 20px;
-    display: inline-block;
-    transition: transform 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background: rgb(230, 194, 122);
-    transform: scale(1.05);
-    border: solid 2px#c9a856;
-}
-
-section {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding-top: 8dvh;
-}
-
-h2 {
-    font-size: 2em;
-    color: #c9a856;
-    text-align: center;
-    font-weight: 600;
-    margin: 30px 0 10px 0;
-    padding-bottom: 10px;
-    margin: 10px;
-    display: inline-block;
 }
 
 
@@ -182,6 +195,10 @@ h2 {
     text-align: center;
 }
 
+#about h2 {
+    padding-bottom: 10px;
+}
+
 #about-text {
     max-width: 800px;
     margin: 0 auto;
@@ -219,7 +236,7 @@ h2 {
     border-radius: 18px;
     overflow: hidden;
     text-align: center;
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.5s ease-in-out;
 }
 
 .employee:hover {
@@ -295,7 +312,7 @@ h2 {
     justify-content: space-between;
     align-items: center;
     border-bottom: 1px solid #c9a856;
-    padding: 15px 0;
+    padding: 12px 0;
 }
 
 .service-info {
@@ -338,12 +355,22 @@ h2 {
     margin: 20px auto;
     text-align: center;
     cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition: background-color 0.5s ease, transform 0.5s ease;
 }
 
 .expand-services:hover {
     background: rgb(230, 194, 122);
-    transform: scale(1.05);
+    transform: scale(1.05) translateY(5px);
+}
+
+.services-action {
+    display: inline-flex;
+}
+
+.services-action img {
+    width: 19px;
+    margin-left: 10px;
+    transform: rotate(90deg);
 }
 
 
@@ -411,6 +438,95 @@ h2 {
     cursor: pointer;
 }
 
+
+
+/* Reviews */
+#reviews {
+    display: block;
+}
+
+.reviews-action {
+    display: inline-flex;
+    transition: 0.5s;
+
+    padding: 10px 20px;
+    border: solid 2px#c9a85600;
+    border-radius: 18px;
+}
+
+.reviews-action:hover,
+.reviews-action:active {
+    transform: translateX(20px);
+    
+    background: rgb(230, 194, 122);
+    border: solid 2px#c9a856;
+    border-radius: 18px;
+}
+
+#reviews h3 img{ /* action arrow */
+    width: 19px;
+    padding-top: 3px;
+    margin: 2px 2px 2px 6px;
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    max-width: 500px;
+    margin: auto;
+}
+
+.reviews-wrapper {
+    overflow: hidden;
+    width: 100%;
+    border-radius: 18px;
+}
+
+.reviews-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.review {
+    min-width: 100%;
+    background: #222222;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    text-align: left;
+}
+
+.review-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.review-content h3 {
+    color: #c9a856;
+    margin: 0;
+}
+
+.carousel-button {
+    background: none;
+    border: none;
+    font-size: 24px;
+    margin: 0 15px;
+    color: #c9a856;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}
+
+
+
 /* Contact */
 #contact {
     display: block;
@@ -422,6 +538,89 @@ h2 {
     height: 450px;
     padding: 0 3dvh;
 }
+
+
+
+/* FAQ */
+.faq-wrap {
+    padding-top: 8dvh;
+    display: block;
+}
+
+.faq-wrap h2 {
+    padding-bottom: 10px;
+}
+
+.faq-wrap p {
+    text-align: center;
+}
+
+.faq {
+    width: 100%;
+    max-width: 800px; /* Maximální šířka pro FAQ sekci */
+    margin: 0 auto; /* Centrování sekce FAQ */
+    padding: 0px 20px 0px 20px; /* Padding pro celou sekci */
+    padding-bottom: 8dvh;
+    display: block;
+}
+
+.faq p {
+    font-size: 1rem;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.faq-item {
+    border-bottom: 1px solid #c9a856;
+    padding: 17px 0;
+    display: flex;
+    flex-direction: column;
+    width: 100%; /* Nastavení šířky na 100% */
+}
+
+.faq-question {
+    display: flex;
+    padding: 3px;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    color: #FFFFF3;
+    width: 100%; /* Šířka otázky přes celý blok */
+}
+
+.faq-answer {
+    display: none;
+    padding-top: 5px;
+    color: #CCCCCC;
+    opacity: 0; /* Inicializace opacity pro animaci */
+    transform: translateY(-10px); /* Posun pro animaci */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Přidání přechodu pro opacity a transformaci */
+    text-align: justify;
+    max-width: 100%; /* Roztažení odpovědi přes celý blok */
+}
+
+.faq-answer p {
+    text-align: justify;
+    margin: 0; /* Nastaví odsazení na 0 pro správné zarovnání */
+}
+
+.faq-item.active .faq-answer {
+    display: block;
+    opacity: 1; /* Zviditelnění odpovědi */
+    transform: translateY(0); /* Vrátí se na původní pozici */
+}
+
+.arrow img {
+    width: 20px;
+    transition: transform 0.5s;
+}
+
+.faq-item.active .arrow {
+    transform: rotate(180deg);
+    transition: 0.5s;
+}
+
 
 
 /* Footer */
@@ -455,7 +654,7 @@ footer {
 .footer-column a {
     color: #FFFFF3;
     text-decoration: none;
-    transition: 0.3s;
+    transition: 0.5s;
 }
 
 .footer-column a:hover {
@@ -483,7 +682,7 @@ footer {
 .social img {
     width: 25px;
     margin: 2px;
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
 }
 
 .social img:hover {
@@ -494,6 +693,7 @@ footer {
     padding: 20px 0;
     border-top: 2px solid #c9a856;
 }
+
 
 
 /* Responzivita pro střední obrazovky (max-width: 1024px) */
@@ -591,68 +791,4 @@ footer {
     .footer-container {
         padding: 10px;
     }
-}
-
-
-
-
-/* Reviews */
-#reviews {
-    display: block;
-}
-
-.carousel-container {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    overflow: hidden;
-    max-width: 500px;
-    margin: auto;
-}
-
-.reviews-wrapper {
-    overflow: hidden;
-    width: 100%;
-    border-radius: 18px;
-}
-
-.reviews-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-}
-
-.review {
-    min-width: 100%;
-    background: #222222;
-    color: white;
-    padding: 20px;
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    text-align: left;
-}
-
-.review-img {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-}
-
-.review-content h3 {
-    color: #c9a856;
-    margin: 0;
-}
-
-.carousel-button {
-    background: none;
-    border: none;
-    font-size: 24px;
-    margin: 0 15px;
-    color: #c9a856;
-    cursor: pointer;
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 0;
 }
