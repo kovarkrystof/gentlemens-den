@@ -30,7 +30,7 @@ h2 {
 
 .second-heading {
     color: #FFFFF3;
-    padding-bottom: 20px;
+    padding: 5px 10px 5px 10px;
 }
 
 
@@ -443,6 +443,7 @@ nav ul li a:hover {
 /* Reviews */
 #reviews {
     display: block;
+    margin: 0 10px;
 }
 
 .reviews-action {
@@ -450,6 +451,7 @@ nav ul li a:hover {
     transition: 0.5s;
 
     padding: 10px 20px;
+    margin-bottom: 10px;
     border: solid 2px#c9a85600;
     border-radius: 18px;
 }
@@ -529,14 +531,86 @@ nav ul li a:hover {
 
 /* Contact */
 #contact {
+    text-align: center;
+    padding-top: 8dvh;
+    background-color: #161616;
+    color: #FFFFF3;
     display: block;
-    min-height: 0;
+}
+
+.contact-container {
+    max-width: 1800px;
+    margin: auto;
+}
+
+.contact-box {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 4px;
+    text-align: center;
+    padding: 30px;
+}
+
+.contact-box h3 {
+    color: #c9a856;
+    margin-bottom: 5px;
+    font-size: 1.5em;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    color: #FFFFF3;
+}
+
+.contact-item a {
+    transition: color 0.5s;
+}
+
+.contact-item a:hover {
+    color: #c9a856;
+}
+
+.contact-item p {
+    margin: 0;
+}
+
+.social-icons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    transition: color 0.3s ease;
+}
+
+.social-icons img {
+    height: 30px;
+    height: 30px;
+    transition: transform 0.5s ease;
+}
+
+.social-icons img:hover,
+.social-icons img:active {
+    transform: scale(1.1);
+}
+
+.additional-info {
+    padding: 10px 3dvh;
+    font-size: 0.9em;
+    color: #ccc;
 }
 
 #contact iframe {
     width: 100%;
     height: 450px;
     padding: 0 3dvh;
+    border: none;
 }
 
 
@@ -668,7 +742,7 @@ footer {
     gap: 5px;
 }
 
-.contact-icon {
+.footer-contact-icon {
     width: 12px;
     margin: 2px;
     display: block;
@@ -685,7 +759,8 @@ footer {
     transition: transform 0.5s ease;
 }
 
-.social img:hover {
+.social img:hover,
+.social img:active {
     transform: scale(1.1);
 }
 
@@ -698,7 +773,7 @@ footer {
 
 /* Responzivita pro střední obrazovky (max-width: 1024px) */
    @media (max-width: 1024px) {
-    
+
     /* GALLERY */
     .gallery-container {
         grid-template-columns: repeat(3, 1fr); /* 3 sloupce */
