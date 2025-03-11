@@ -79,7 +79,7 @@ header {
 }
 
 .logo img {
-    height: 10vh;
+    height: 8vh;
 }
 
 
@@ -698,6 +698,7 @@ footer {
 
 /* Responzivita pro střední obrazovky (max-width: 1024px) */
    @media (max-width: 1024px) {
+    
     /* GALLERY */
     .gallery-container {
         grid-template-columns: repeat(3, 1fr); /* 3 sloupce */
@@ -711,6 +712,10 @@ footer {
 
     header {
         height: 7dvh;
+    }
+
+    .logo img {
+        height: 7vh;
     }
 
     /* NAV BAR */
@@ -761,6 +766,7 @@ footer {
     .cta-button {
         margin-top: 20px;
     }
+
     /* BURGER MENU */
     .burger-menu {
         display: flex; /* Zobrazení burger menu */
@@ -791,6 +797,11 @@ footer {
     header {
         height: 6dvh;
     }
+
+    .logo img {
+        height: 6vh;
+    }
+
     /* NAV BAR */
     nav {
         top: 6dvh;
