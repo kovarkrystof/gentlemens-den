@@ -708,13 +708,15 @@ footer {
 
 /*  Responzivita pro menší obrazovky (max-width: 768px) */
 @media (max-width: 768px) {
-    .burger-menu {
-        display: flex; /* Zobrazení burger menu */
+
+    header {
+        height: 7dvh;
     }
 
+    /* NAV BAR */
     nav {
         position: absolute;
-        top: 8dvh;
+        top: 7dvh;
         right: 0;
         width: 100%;
         background: #161616e6;
@@ -759,6 +761,15 @@ footer {
     .cta-button {
         margin-top: 20px;
     }
+    /* BURGER MENU */
+    .burger-menu {
+        display: flex; /* Zobrazení burger menu */
+    }
+
+    /* Landing page */
+    #home {
+        margin: 7dvh 2dvh 2dvh 2dvh;
+    }
 
     /* ABOUT */
     .employee-container {
@@ -776,9 +787,27 @@ footer {
 
 /* Responzivita pro úzké displeje (max-width: 480px) */
 @media (max-width: 480px) {
+    
+    header {
+        height: 6dvh;
+    }
+    /* NAV BAR */
+    nav {
+        top: 6dvh;
+    }
+
+    /* Landing page */
+    #home {
+        margin: 6dvh 1dvh 1dvh 1dvh;
+    }
+
+    #home h1 {
+        font-size: 2.7em;
+    }
+
     /* Price list */
     #services {
-    padding: 8dvh 10px 0px 10px;
+    padding: 6dvh 10px 0px 10px;
     }
 
     /* GALLERY */
