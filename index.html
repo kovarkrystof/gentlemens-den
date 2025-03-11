@@ -86,8 +86,6 @@
         </div>
     </section>
 
-
-
     <!-- Služby -->
     <section id="services">
         <h2>Cenník služeb</h2>
@@ -99,14 +97,14 @@
                 </div>
                 <span class="price">400&nbsp;Kč</span>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <div class="service-info">
                     <h3>Holení břitvou</h3>
                     <p>Tradiční holení s použitím horkého ručníku pro extra komfort.</p>
                 </div>
                 <span class="price">500&nbsp;Kč</span>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <div class="service-info">
                     <h3>Úprava vousů</h3>
                     <p>Trimování, tvarování a úprava vousů podle Vašich preferencí.</p>
@@ -145,7 +143,7 @@
                 </div>
                 <span class="price">50&nbsp;Kč</span>
             </div>
-            <div class="service">
+            <div class="service hidden">
                 <div class="service-info">
                     <h3>Masáž hlavy</h3>
                     <p>Úleva a uvolnění s relaxační masáží hlavy během mytí.</p>
@@ -170,14 +168,14 @@
         
         <h2>Speciální služby</h2>
         <div class="service-list">
-            <div class="service">
+            <div class="service hidden">
                 <div class="service-info">
                     <h3>Střih s horkým ručníkem</h3>
                     <p>Luxusní střih doplněný o horký ručník pro maximální pohodlí a relaxaci.</p>
                 </div>
                 <span class="price">550&nbsp;Kč</span>
             </div>
-            <div class="service hidden">
+            <div class="service">
                 <div class="service-info">
                     <h3>Keratinová úprava vlasů</h3>
                     <p>Regenerační ošetření pro zdravější a hladší vlasy s dlouhotrvajícím efektem.</p>
@@ -192,13 +190,14 @@
             </div>
         </div>
             
-        <button class="expand-services">Zobrazit celý ceník</button>
+        <button class="expand-services"><span class="services-action">Zobrazit celý ceník<img src="assets/icons/arrow-right(1).svg" alt=""></span></button>
 
     </section>    
     
     <!-- Galerie -->
     <section id="gallery">
-        <h2>Nechte se inspirovat, protože i takhle může vypadat Váš nový účes</h2>
+        <h2>Styl, který vás definuje</h2>
+        <h3 class="second-heading">Najděte inspiraci pro svůj nový look</h3>        
         <div class="gallery-container">
             <img src="assets/images/haircut1.jpg" alt="Galerie 1" class="gallery-item">
             <img src="assets/images/haircut2.jpg" alt="Galerie 2" class="gallery-item">
@@ -222,6 +221,9 @@
     <!-- Reviews -->
     <section id="reviews">
         <h2>Co o nás řekli naši zákazníci?</h2>
+
+        <h3 class="second-heading"><a href="https://business.google.com/reviews" target="_blank"><span class="reviews-action">Chci taky napsat recenzi<img src="assets/icons/arrow-right.svg" alt=""></span></a></h3>
+
         <div class="carousel-container">
             <div class="reviews-wrapper">
                 <div class="reviews-track">
@@ -278,6 +280,43 @@
         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2586.4153187577913!2d17.269749776736255!3d49.58991697144062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47124e87273bae7b%3A0x628e9cecc8a87298!2zVnnFocWhw60gb2Rib3Juw6EgxaFrb2xhIGEgU3TFmWVkbsOtIHByxa9teXNsb3bDoSDFoWtvbGEgZWxla3Ryb3RlY2huaWNrw6E!5e0!3m2!1scs!2scz!4v1741347149612!5m2!1scs!2scz" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </section>
 
+    <!-- FAQ -->
+    <section class="faq-wrap">
+        <h2>Odpovědi na nejčastější otázky</h2>
+        <h3 class="second-heading">FAQ</h3>
+        <div class="faq">
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Jaké způsoby platby přijímáte?</span>
+                    <span class="arrow"><img src="assets/icons/arrow-down.svg" alt="open"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Přijímáme hotovost, platební karty i&nbsp;bezkontaktní platby.</p>
+                </div>
+            </div>
+    
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Mohu si u vás dát kávu nebo drink?</span>
+                    <span class="arrow"><img src="assets/icons/arrow-down.svg" alt="open"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Ano, součástí našeho servisu je nabídka kávy a&nbsp;dalších nápojů pro maximální komfort.</p>
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">
+                    <span>Jak dlouho u vás průměrně trvá návštěva?</span>
+                    <span class="arrow"><img src="assets/icons/arrow-down.svg" alt="open"></span>
+                </div>
+                <div class="faq-answer">
+                    <p>Většina střihů trvá 30-45 minut, úprava vousů kolem 20 minut a&nbsp;kompletní balíček (střih&nbsp;+&nbsp;vousy) přibližně 60 minut.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer>
         <div class="footer-container">
             <div class="footer-column about">
@@ -317,9 +356,9 @@
             <div class="footer-column social">
                 <h3>Sledujte nás</h3>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/"><img src="assets/icons/facebook-icon.svg" alt="facebook-link"></a>
-                    <a href="https://www.instagram.com/"><img src="assets/icons/instagram-icon.svg" alt="instagram-link"></a>
-                    <a href="https://www.linkedin.com/"><img src="assets/icons/linkedin-icon.svg" alt="linkedin-link"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="assets/icons/facebook-icon.svg" alt="facebook-link"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="assets/icons/instagram-icon.svg" alt="instagram-link"></a>
+                    <a href="https://www.linkedin.com/" target="_blank"><img src="assets/icons/linkedin-icon.svg" alt="linkedin-link"></a>
                 </div>
             </div>
         </div>
@@ -328,34 +367,5 @@
 
     <script src="assets/js/script.js"></script>
 
-    <script src="assets/js/cenik.js"></script>
-
-    <script>
-        const track = document.querySelector('.reviews-track');
-        const nextButton = document.querySelector('#next-review');
-        const reviews = document.querySelectorAll('.review');
-        const reviewWidth = reviews[0].clientWidth;
-        let index = 0;
-        
-        // Klonování prvků pro nekonečný efekt
-        reviews.forEach(review => {
-            let clone = review.cloneNode(true);
-            track.appendChild(clone);
-        });
-        
-        nextButton.addEventListener('click', () => {
-            index++;
-            track.style.transition = 'transform 0.5s ease-in-out';
-            track.style.transform = `translateX(${-index * reviewWidth}px)`;
-            
-            if (index >= reviews.length) {
-                setTimeout(() => {
-                    track.style.transition = 'none';
-                    track.style.transform = `translateX(0px)`;
-                    index = 0;
-                }, 500);
-            }
-        });
-        </script>
 </body>
 </html>
