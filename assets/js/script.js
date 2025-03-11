@@ -55,3 +55,85 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+
+
+// PRICE LIST
+document.addEventListener("DOMContentLoaded", () => {
+    const serviceSections = document.querySelectorAll(".service-list");
+    const expandButtons = document.querySelectorAll(".expand-services");
+    const navServicesLink = document.querySelector("nav ul li a[href='#services']");
+
+    // Funkce pro rozbalení ceníku
+    function expandPricing() {
+        serviceSections.forEach(section => section.classList.add("expanded"));
+        expandButtons.forEach(button => button.style.display = "none");
+    }
+
+    // Přidání event listeneru pro tlačítka rozbalení
+    expandButtons.forEach(button => {
+        button.addEventListener("click", expandPricing);
+    });
+
+    // Pokud uživatel klikne v navigaci na "Služby", automaticky rozbalíme ceník
+    navServicesLink.addEventListener("click", (event) => {
+        expandPricing();
+    });
+});
+
+
+
+// REVIEWS
+const track = document.querySelector('.reviews-track');
+const nextButton = document.querySelector('#next-review');
+const reviews = document.querySelectorAll('.review');
+const reviewWidth = reviews[0].clientWidth;
+let index = 0;
+
+// Klonování prvků pro nekonečný efekt
+for (const review of reviews) {
+    const clone = review.cloneNode(true);
+    track.appendChild(clone);
+}
+
+nextButton.addEventListener('click', () => {
+    index++;
+    track.style.transition = 'transform 0.5s ease-in-out';
+    track.style.transform = `translateX(${-index * reviewWidth}px)`;
+            
+    if (index >= reviews.length) {
+        setTimeout(() => {
+            track.style.transition = 'none';
+            track.style.transform = 'translateX(0px)';
+            index = 0;
+        }, 500);
+    }
+});
+
+
+
+
+// FAQ
+const faqQuestions = document.querySelectorAll('.faq-question');
+
+for (const item of faqQuestions) {
+    item.addEventListener('click', () => {
+        const faqItem = item.parentElement;
+        faqItem.classList.toggle('active');
+        const answer = faqItem.querySelector('.faq-answer');
+
+        if (faqItem.classList.contains('active')) {
+            answer.style.display = 'block';
+            setTimeout(() => {
+                answer.style.opacity = '1';
+                answer.style.transform = 'translateY(0)';
+            }, 10); // Zpoždění pro animaci
+        } else {
+            answer.style.opacity = '0';
+            answer.style.transform = 'translateY(-10px)';
+            setTimeout(() => {
+                answer.style.display = 'none';
+            }, 300); // Čas potřebný pro animaci
+        }
+    });
+}
