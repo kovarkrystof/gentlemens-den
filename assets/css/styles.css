@@ -850,6 +850,8 @@ footer {
     /* Landing page */
     #home {
         margin: 7dvh 2dvh 2dvh 2dvh;
+        padding-left: 4%;       
+        height: 91dvh;
     }
 
     /* ABOUT */
@@ -885,6 +887,8 @@ footer {
     /* Landing page */
     #home {
         margin: 6dvh 1dvh 1dvh 1dvh;
+        padding-left: 3%;
+        height: 93dvh;
     }
 
     #home h1 {
