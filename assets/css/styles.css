@@ -112,39 +112,38 @@ nav ul li a:hover {
     transition: 0.5s;
 }
 
-
-
-/** BURGER MENU  **/
+/** BURGER MENU **/
 .burger-menu {
     display: none;
-    flex-direction: column;
-    gap: 5px;
     cursor: pointer;
     z-index: 1100;
-    height: 21px;
-}
-
-.burger-menu .bar {
+    height: 30px;
     width: 30px;
-    height: 4px;
-    background-color: #FFFFF3;
-    border-radius: 5px;
-    transition: transform 0.5s ease, opacity 0.5s ease;
+    position: relative;
 }
 
-/* Animace křížku */
-.burger-menu.active .bar:nth-child(1) {
-    transform: translateY(8.5px) rotate(48deg);
+.burger-menu i {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26px;
+    color: #FFFFF3;
+    transition: opacity 0.3s ease-in-out, transform 0.4s ease-in-out;
 }
 
-.burger-menu.active .bar:nth-child(2) {
-    opacity: 0; /* Skrytí prostřední čáry */
+.burger-menu .icon-close {
+    opacity: 0;
+    transform: translate(-50%, -50%) rotate(-90deg) scale(0.8);
 }
 
-.burger-menu.active .bar:nth-child(3) {
-    transform: translateY(-8.5px) rotate(-43deg);
+.burger-menu.active .icon-burger {
+    opacity: 0;
 }
 
+.burger-menu.active .icon-close {
+    opacity: 1;
+}
 
 
 /* Landing page */
@@ -451,7 +450,7 @@ nav ul li a:hover {
     transition: 0.5s;
     padding: 10px 20px;
     margin-bottom: 10px;
-    border: solid 2px #c9a85600; /* Mírná úprava pro transparentní border */
+    border: solid 2px #c9a85600;
     border-radius: 18px;
 }
 
@@ -589,7 +588,7 @@ nav ul li a:hover {
 
 .social-icons img {
     height: 30px;
-    width: 30px; /* Přidáno pro konzistenci */
+    width: 30px;
     transition: transform 0.5s ease;
 }
 
@@ -705,7 +704,6 @@ footer {
     padding: 0;
 }
 
-/* === ZMĚNA: Odebrání gap, použití margin pro sloupce === */
 .footer-container {
     display: flex;
     flex-wrap: wrap;
@@ -720,10 +718,9 @@ footer {
 .footer-column {
     flex-grow: 0;
     flex-shrink: 0;
-    margin: 10px 15px; /* PŘIDÁNO odsazení */
+    margin: 10px 15px; /* Přidáno odsazení */
     text-align: left;
 }
-/* Konec změn */
 
 
 .footer-column h3 {
@@ -762,7 +759,7 @@ footer {
 
 .social img {
     width: 25px;
-    height: 25px; /* Přidáno pro konzistenci */
+    height: 25px;
     margin: 2px;
     transition: transform 0.5s ease;
 }
@@ -788,12 +785,12 @@ footer {
     font-size: 16px;
     white-space: normal;
     text-align: center;
-    margin: 0; /* Můžete přidat malý margin, např. margin: 5px; pokud je potřeba */
+    margin: 5px; /* Přidán malý margin */
 }
 
 .madeby {
     transition: all 0.3s;
-    margin: 5px; /* Přidán malý margin pro oddělení */
+    margin: 5px; /* Přidán malý margin */
 }
 
 .madeby:hover {
@@ -826,7 +823,7 @@ footer {
     }
 
     .madeby {
-        margin-top: 10px; /* Ponecháno pro vertikální mezeru */
+        margin-top: 10px;
         transform: scale(0.9);
     }
 
@@ -852,6 +849,7 @@ footer {
 
     header {
         height: 7dvh;
+        padding: 15px 20px; /* Menší padding pro header */
     }
 
     .logo img {
@@ -905,11 +903,14 @@ footer {
 
     .cta-button {
         margin-top: 20px;
+        margin-left: 0; /* Odstranění levého marginu v mobilním menu */
     }
 
-    /* BURGER MENU */
+    /* BURGER MENU - Zobrazení */
     .burger-menu {
-        display: flex;
+        display: flex; /* Zobrazí kontejner burger menu */
+        align-items: center; /* Vertikální zarovnání, pokud je potřeba */
+        justify-content: center; /* Horizontální zarovnání, pokud je potřeba */
     }
 
     /* Landing page */
@@ -938,6 +939,7 @@ footer {
 
     header {
         height: 6dvh;
+        padding: 15px 15px;
     }
 
     .logo img {
@@ -973,6 +975,7 @@ footer {
 
     /* FOOTER */
     .footer-column {
-        margin: 10px 5px; /* Menší horizontální margin na velmi malých obrazovkách */
+        margin: 10px 5px;
+        text-align: center;
     }
 }
