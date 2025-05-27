@@ -9,4 +9,4 @@ Check it out [here](https://kovarkrystof.github.io/gentlemens-den/)! 👀
 - **HTML**  
 - **CSS**  
 - **JavaScript**
-- **Foont Awesome**
+- **Font Awesome**
