@@ -76,10 +76,11 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 2vh;
 }
 
 .logo img {
-    height: 11vh;
+    height: 10vh;
 }
 
 
