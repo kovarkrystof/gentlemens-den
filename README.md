@@ -8,4 +8,5 @@ Check it out [here](https://kovarkrystof.github.io/gentlemens-den/)! 👀
 ## 🛠 Technologies Used  
 - **HTML**  
 - **CSS**  
-- **JavaScript**  
+- **JavaScript**
+- **Foont Awesome**
