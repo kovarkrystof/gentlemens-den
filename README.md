@@ -10,3 +10,5 @@ Check it out [here](https://kovarkrystof.github.io/gentlemens-den/)! 👀
 - **CSS**  
 - **JavaScript**
 - **Font Awesome**
+
+You can check out the detailed documentation or project report [here](documentation.pdf) *(PDF)*.
