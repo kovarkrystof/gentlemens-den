@@ -15,4 +15,4 @@ Check it out [here](https://kovarkrystof.github.io/gentlemens-den/)! 👀
 ![IMG](wireframe.png)
 
 
-You can check out the detailed documentation or project report [here](documentation.pdf).
+You can check out the detailed project report [here](documentation.pdf).
