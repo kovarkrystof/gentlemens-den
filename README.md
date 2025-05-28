@@ -12,7 +12,6 @@ Check it out [here](https://kovarkrystof.github.io/gentlemens-den/)! 👀
 - **Font Awesome**
 
 ## ✏️ Wireframe
-- using **Canva**
-- Check it [here](wireframe.png)
+- CHeck wireframe using **Canva** [here](wireframe.png)
 
 You can check out the detailed project report [here](documentation.pdf).
