@@ -13,7 +13,6 @@ Check it out [here](https://kovarkrystof.github.io/gentlemens-den/)! 👀
 
 ## ✏️ Wireframe
 - using **Canva**
-<img src="wireframe.png" alt="Web preview" width="600"/>
-
+- Check it [here](wireframe.png)
 
 You can check out the detailed project report [here](documentation.pdf).
