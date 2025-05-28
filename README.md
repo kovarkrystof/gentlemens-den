@@ -11,8 +11,9 @@ Check it out [here](https://kovarkrystof.github.io/gentlemens-den/)! 👀
 - **JavaScript**
 - **Font Awesome**
 
-##  Low-fidelity wireframe
-![IMG](wireframe.png)
+## ✏️ Wireframe
+- using **Canva**
+<img src="wireframe.png" alt="Web preview" width="600"/>
 
 
 You can check out the detailed project report [here](documentation.pdf).
